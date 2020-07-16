@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OceanMaster</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/img/OMlogo.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v2.1.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script src="code.js"></script>
+  <audio id="myAudio">
+    <source src="tropical-music.mp3">
+  </audio>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+  <script>
+      var x = document.getElementById("myAudio");
+      var num = 3;
+      function checkAudio(){
+          if(num%2 === 0){
+              pauseAudio();
+          }
+          else{
+              playAudio();
+          }
+      }
+      function playAudio() {
+          num++;
+          x.play();
+      }
+
+      function pauseAudio() {
+          num++;
+          x.pause();
+      }
+  </script>
+
+  <style>
+    .fling-minislide {width:75%; height:0px; padding-bottom: 50%; overflow:hidden; margin: auto;}
+    .fling-minislide img{margin: auto; position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 75%; height: auto}
+
+    @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+    .fling-minislide img:nth-child(10){animation-delay:18s;}
+    .fling-minislide img:nth-child(9){animation-delay:16s;}
+    .fling-minislide img:nth-child(8){animation-delay:14s;}
+    .fling-minislide img:nth-child(7){animation-delay:12s;}
+    .fling-minislide img:nth-child(6){animation-delay:10s;}
+    .fling-minislide img:nth-child(5){animation-delay:8s;}
+    .fling-minislide img:nth-child(4){animation-delay:6s;}
+    .fling-minislide img:nth-child(3){animation-delay:4s;}
+    .fling-minislide img:nth-child(2){animation-delay:2s;}
+    .fling-minislide img:nth-child(1){animation-delay:0s;}
+  </style>
+
+<!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav class="nav-menu">
+      <ul>
+        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#contact"><i class="bx bx-game"></i><span>Play Trivia!</span></a></li>
+        <li><a href="#howto"><i class="bx bx-info-square"></i> <span>How to Play</span></a></li>
+        <li><a href="#facts"><i class="bx bx-bulb"></i> <span>Facts</span></a></li>
+        <li><a href="#dono"><i class="bx bx-help-circle"></i> <span>How You Can Help</span></a></li>
+        <li><a href="#gallery"><i class="bx bx-image"></i> <span>Image Gallery</span></a></li>
+        <li><a href="#about"><i class="bx bx-user"></i> <span>About Us</span></a></li>
+        <li><a href="#footer"><i class="bx bx-data"></i> <span>Infographics</span></a></li>
+        <li><a onclick="checkAudio()"><i class="bx bx-music"></i> <span>Play some Tropical Music!</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1 style="text-align: center; font-family: 'Lucida Calligraphy', Courier, monospace; color: white; margin-bottom: 50px; border-color: black; border-width: 100px"><strong>OceanMaster</strong></h1>
+
+      <p style="text-align: center; font-family: 'Lucida Calligraphy', Courier, monospace; color: black; background-color: white;">Educating the Community about the Deep Sea</p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>OceanMaster Trivia</h2>
+          <p>Test your knowledge on all things related to the ocean.</p>
+          <br>
+          <div class="row mt-1">
+
+            <div style="margin: auto;" class="col-lg-8 mt-5 mt-lg-0">
+              <h3 style="visibility: hidden; color: darkblue" id="qNum"></h3>
+              <form id="trivia" method="post" role="form" class="php-email-form">
+                <div id="start" class="text-center"><button onclick="startGame()" type="submit">Play</button></div>
+                <h1 style="visibility: hidden" id="Q" class="section-title">Insert Question Here</h1>
+                <br>
+                <img id="pic" style="visibility: hidden" width="300" height="150" src="">
+                <div class="text-center"><button style="visibility: hidden" id="c1" onclick="getAnswer(0)" type="option">Option 1</button>&nbsp&nbsp<button style="visibility: hidden" id="c2" onclick="getAnswer(1)" type="option">Option 2</button></div>
+                <br>
+                <div class="text-center"><button style="visibility: hidden" id="c3" onclick="getAnswer(2)" type="option">Option 3</button>&nbsp&nbsp<button style="visibility: hidden" id="c4" onclick="getAnswer(3)" type="option">Option 4</button></div>
+                <br>
+                <br>
+                <div class="text-center"><button style="visibility: hidden" id="nextQ" onclick="setQuestion()" type="next">Next Question</button></div>
+              </form>
+
+            </div>
+        </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section style="margin: auto;" id="howto" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Instructions</h2>
+        <p>Welcome to Ocean Master Trivia!</p>
+        <br>
+        <p>1. To begin the game, press play.</p>
+        <br>
+        <p>2. You will then be asked a series of questions.</p>
+        <br>
+        <p>3. Each question has four answer choices and only one correct answer.</p>
+        <br>
+        <p>4. Once you select an answer, you cannot change it.</p>
+        <br>
+        <p>5. Press the "Next Question" button after you answer each question.</p>
+        <br>
+        <p>6. After you answer all of the questions, you will be given a score that shows you how well you performed in the game.</p>
+        <br>
+        <p>7. Finally, if you want to play again, just select play and you'll be able to answer more questions. (Note: Some may be repeats)</p>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- ======= Facts Section ======= -->
+  <section style="margin: auto;" id="facts" class="facts">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Facts and Figures</h2>
+        <p>Here are some intriguing and mind-boggling statistics about the ocean and the environment. It'll be sure to wow you!</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bx bx-trash"></i>
+            <span data-toggle="counter-up">150</span>
+            <p>million tons of garbage currently circulates in our oceans.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="bx bx-water"></i>
+            <span data-toggle="counter-up">3.4</span>
+            <p>percent of oceans are protected.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bx bx-shopping-bag"></i>
+            <span data-toggle="counter-up">8,000,000</span>
+            <p>tons of plastic enter the ocean every year!</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bx bxs-plane-land"></i>
+            <span data-toggle="counter-up">80</span>
+            <p>percent of ocean pollution comes from land.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bx bxs-factory"></i>
+            <span data-toggle="counter-up">10</span>
+            <p>percent of the plastic produced each year ends up in the ocean.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="bx bx-food-menu"></i>
+            <span data-toggle="counter-up">3</span>
+            <p>billion people rely on wild-caught and farmed seafood as a primary source of protein.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bx bx-timer"></i>
+            <span data-toggle="counter-up">2050</span>
+            <p>is the year when the amount of plastic in the oceans will outweigh the total number of fish in the world!</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bx bx-recycle"></i>
+            <span data-toggle="counter-up">9</span>
+            <p>percent of plastic is recycled and plastics take over half a millennium to degrade!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Facts Section -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section style="margin: auto;" id="dono" class="facts">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>How You Can Help</h2>
+        <p>There are many Donations Centers and Nature Conservation Organizations across the United States.</p>
+        <p>Go check them out and see what you can do to make a change! (Click on the markers for more info)</p>
+      </div>
+      <br>
+      <div id='map' style='width: 85%; height: 750px; margin: auto;'>
+        <script src="https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js"></script>
+        <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+      </div>
+    </div>
+  </section><!-- End Facts Section -->
+  <style>
+    #marker {
+      background-image: url("assets/img/pin.png");
+      background-size: cover;
+      width: 39px;
+      height: 39px;
+      border-radius: 100%;
+    }
+
+    .mapboxgl-popup {
+      width: 200%;
+      height: 200%;
+      font: 16px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibmF5YWsxMzI5IiwiYSI6ImNrYmkxZGZ4eTA3OWYycnBkY3Q0czNhNGcifQ.gptv7vDeenxsCwBZ3-qXbw';
+      var mapboxClient = mapboxSdk({ accessToken: mapboxgl.accessToken });
+      var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/nayak1329/ckcjybmrd3k211jqrdx1w4lq0', // stylesheet location
+          center: [-95.7129, 37], // starting position [lng, lat]
+          zoom: 2.7 // starting zoom
+      });
+      addMarker("Washington, D.C.", "Organization: Oceana || Location: Washington, D.C. || Details: Oceana, inc. is a 501(c)(3) nonprofit ocean conservation organization focused on influencing specific policy decisions on the national level to preserve and restore the world's oceans. || Website: oceana.org");
+      addMarker("San Juan Island, Washington", "Organization: Sea Shepherd || Location: San Juan Island, Washington || Details: Sea Shephard aims to end the destruction of habitat and slaughter of wildlife in the world's oceans in order to conserve and protect ecosystems and species. || Website: seashepherd.org");
+      addMarker("Oakland, California", "Organization: Coral Reef Alliance || Location: Oakland, California || Details: The Coral Reef Alliance (CORAL) is a non-profit, environmental NGO aiming to save the world's coral reefs. || Website: coral.org");
+      addMarker("5 Seagate Blvd, Key Largo, FL 33037","Organization: Coral Restoration || Location: Key Largo, Florida || Details: This foundation works to restore our coral reefs, educating others on the importance of our oceans, and using science to further research and monitoring techniques. They are dedicated to creating offshore nurseries and restoration programs for threatened coral species, allowing them to take the lead in innovative nursery and restoration techniques that are implemented worldwide. || Website: coralrestoration.org");
+      addMarker("30151 Tomas, Suite 200 Rancho Santa Margarita, CA 92688","Organization: Project Aware || Location: Rancho Santa Margarita, California || Details: Project AWARE is a global movement of scuba divers protecting our ocean planet – one dive at a time. Focused on the critical issues of Sharks in Peril and Marine Debris, Project AWARE empowers thousands to work together for a clean, healthy and abundant ocean planet. || Website: projectaware.org");
+      addMarker("8 S Michigan Ave, Chicago, IL 60603","Organization: The Nature Conservancy || Location: Chicago, IL || Details: The Nature Conservancy aims to conserve the lands and waters on which all life depends.  Every acre they protect, every river mile restored, every species brought back from the brink, begins with us.  They are probably one of the oldest, most know, and respected conservation organization. || Website: nature.org");
+      addMarker("257 Park Avenue South, New York, NY 10010","Organization: Environmental Defense Fund || Location: New York, NY || Details: We're one of the world's largest environmental organizations, with more than 2.5 million members and a staff of 700 scientists, economists, policy experts, and other professionals around the world.  We address today's most urgent environmental challenges. Working in partnership with others, we focus where we're best positioned to help, based on our strengths. || Website: edf.org");
+      addMarker("6919 Portwest Dr #100, Houston, TX 77024","Organization: Coastal Conservation Association || Location: Houston, Texas || Details: CCA and its state organizations are engaged in hundreds of different programs and projects related to conservation at all times. These programs and projects include scientific studies, scholarship funding, artificial reefs, hatcheries, contaminate studies, hydrology studies, freshwater inflows, and support of local enforcement agencies and others. || Website: ccatexas.org");
+      addMarker("2200 N. 33rd St. Lincoln, NE 68503","Organization: Nebraska Game Parks || Location: Lincoln, Nebraska || Details: The Nebraska Game and Parks Foundation is an organization of Nebraskans for Nebraskans focused on the future of parks, wildlife management and conservation in our state. Your tax-deductible contribution to the Foundation—in any amount—helps care for and preserve the outdoor resources that make Nebraska special. || Website: outdoornebraska.gov");
+      addMarker("4669 7th St. Boulder, CO 80304","Organization: Inland Ocean Coalition || Location: Boulder, Colorado || Details: The Inland Ocean Coalition’s unifying charge is to develop a two-way relationship with the ocean and water. Those who live among mountains, rivers, and inland cities have a direct impact on the cycles of life in the ocean. As the nation's first Inland Ocean Movement, our goal is to be a wellspring for literacy and community engagement across North America. || Website: inlandoceancoalition.org");
+      function addMarker(location, popupInfo){
+          l = location;
+          mapboxClient.geocoding
+              .forwardGeocode({
+                  query: l,
+                  autocomplete: false,
+                  limit: 10
+              })
+              .send()
+              .then(function (response) {
+                  if (
+                      response &&
+                      response.body &&
+                      response.body.features &&
+                      response.body.features.length
+                  ) {
+                      var feature = response.body.features[0];
+
+                      // Creates DOM element for the marker
+                      function createDOM() {
+                          var el = document.createElement('div');
+                          el.id = 'marker';
+                          return el;
+                      }
+
+                      function createPopUp() {
+                          // alert(eventsInfo)
+                          // var textDisp = "Event Name: " + eventName + "\n | Event Type: " + eventType + "\n | Organization: " + orgName + "\n | Location: " + loc + "\n | Details: " + desc + "\n | Contact: " + contactInfo + "\n | Website URL: " + webLink + "\n | Attendees Needed: " + attendees
+                          var popup = new mapboxgl.Popup({offset: 25}).setText(popupInfo);
+                          return popup;
+                      }
+
+                      new mapboxgl.Marker(createDOM())
+                          .setLngLat(feature.center)
+                          .setPopup(createPopUp())
+                          /* .setPopup(createPopUp(prompt("Insert information about location here: "))) // sets a popup on this marker*/
+                          .addTo(map);
+                  }
+              })
+      }
+  </script>
+
+  <section style="margin: auto;" id="gallery">
+      <div class="section-title">
+        <h2>Image Gallery</h2>
+        <p>Below are some startling photos of the pollution that is currently being spread across the globe in oceans.</p>
+      </div>
+      <div class="fling-minislide">
+        <img src="assets/img/pic10.jpg" style="height:500px;" alt="Slide 10" />
+        <img src="assets/img/pic9.jpg" style="height:500px;" alt="Slide 9" />
+        <img src="assets/img/pic8.jpg" style="height:500px;" alt="Slide 8" />
+        <img src="assets/img/pic7.jpg" style="height:500px;" alt="Slide 7" />
+        <img src="assets/img/pic6.jpg" style="height:500px;" alt="Slide 6" />
+        <img src="assets/img/pic5.jpg" style="height:500px;" alt="Slide 5" />
+        <img src="assets/img/pic4.jpg" style="height:500px;" alt="Slide 4" />
+        <img src="assets/img/pic3.jpg" style="height:500px;" alt="Slide 3" />
+        <img src="assets/img/pic2.jpg" style="height:500px;" alt="Slide 2" />
+        <img src="assets/img/pic1.jpg" style="height:500px;" alt="Slide 1" />
+      </div>
+  </section><!-- End Facts Section -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- ======= About Section ======= -->
+  <section style="margin: auto;" id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Our Mission</h2>
+        <p>Our oceans are vital to life on earth. The oceans produce 70% of the world’s oxygen and absorbs 50 times more carbon than our atmosphere. Additionally, the oceans help regulate the earth’s climate, provide food for billions of people, provide millions of jobs, and are home to 50-80% of all life. Despite its importance, the ocean faces more threats than ever, such as run-off pollution, air pollution, oil spills, oxygen depletion, climate change, and overfishing. Most people are completely unaware of the numerous threats to our ocean. Our goal with OceanMaster is to spread awareness about the various environmental issues that are taking place in our society. We hope that this platform can be used to tell people to take initiative on protecting our beautiful oceans.
+        </p>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        <strong>Donation Centers Infographic: </strong><a href="assets/img/Donations.pdf">Click Here</a>
+        <br>
+        <br>
+        <strong>How to Stop the Spread of Pollution Infographic: </strong><a href="assets/img/Footprint.pdf">Click Here</a>
+        <br>
+        <br>
+        <strong>&copy; Copyright OceanMaster.</strong> All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        <strong>Developed by: </strong><a href="https://www.linkedin.com/in/abhi-nayak-7a9a531ab/">Abhi Nayak</a>.
+        <br>
+        <strong>Collaborators: </strong><a href="https://www.linkedin.com/in/aditya-bommareddy-6217a51b2/">Aditya Bommareddy</a>, <a href="https://www.linkedin.com/in/avin-naik-a48475198/">Avin Naik</a>, and Anish Naik.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
